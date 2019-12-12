@@ -1,0 +1,119 @@
+/*
+* @Author: Acer
+* @Date:   2019-12-09 18:47:23
+* @Last Modified by:   Acer
+* @Last Modified time: 2019-12-12 18:49:09
+*/
+*{
+    padding: 0;
+    margin: 0;
+}
+ul,li{
+	list-style: none;
+}
+.box{
+    width:1360px;
+    height: 460px; 
+    border: 1px ;
+    margin: 100px auto;
+    position: relative; 
+    border-left:1px solid black ;
+    border-right:1px solid black ;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden; 
+}
+ .p1{
+	width:1360px;
+	height: 20px;
+	background-color: #ccc;
+
+}
+.p2{
+	position: absolute;
+	left: 180px;
+	z-index: 3;
+	top: 1px;
+}
+.h1{
+	width:200px;
+	height: 20px;
+	position: absolute;
+	left: 0px;
+	background-color: #ccc;
+	z-index: 2;
+}
+.h2{
+	width:200px;
+	height: 20px;
+	position: absolute;
+	right: 0px;
+	background-color: #ccc;
+	z-index: 2;
+}
+.p3{
+	width: 1360px;
+	height: 20px;
+	font-size: 12px;
+	color: red;
+	line-height: 20px;
+	position: absolute;
+	left: 1500px;
+	z-index: 1;
+}
+ .p4{
+	width: 1200px;
+	height: 384px;
+	position: absolute;
+	left: 80px;
+	top:30px;
+	overflow: hidden;
+}  
+.slider{
+    width: 8400px;
+    position: absolute; 
+    left: -1200px;
+}
+.slide{
+	width: 1200px;
+	height: 384px;
+	float: left;
+	overflow: hidden; 
+}
+.box>span{
+	display: block;
+	width: 30px;
+	height: 50px;
+	text-align: center;
+	cursor: pointer;
+	top: 175px;
+	line-height: 50px;
+	background: rgb(255, 0, 0);
+	font-size: 30px;
+	position: absolute;
+	opacity: 0;
+}
+#left{
+	left:100px;
+}
+#right{
+	right:100px;
+} 
+.nav{
+	position: absolute;
+	left: 500px;
+	bottom: 55px;
+}
+.nav>li{
+	float: left;
+	width: 20px;
+	height: 20px;
+	background: #ccc;
+	cursor: pointer;
+	margin: 0 10px;
+	border-radius: 50%;
+	text-align: center;
+
+}
+.nav .active{
+	background: red;
+}
